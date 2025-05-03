@@ -1,17 +1,16 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './Components/Layouts/JS/header';
-import Footer from './Components/Layouts/JS/footer';
-import Home from './Components/pages/JS/Home';
-import About from './Components/pages/JS/About';
-import Service from './Components/pages/JS/Service';
-import Company from './Components/pages/JS/Company';
-import Contact from './Components/pages/JS/Contact';
-import PostDetail from './Components/SubComponents/JS/PostDetail';
+import Header from './Components/Header/';
+import Footer from './Components/Footer/';
+import Home from './pages/Home/';
+import About from './pages/About/';
+import Service from './pages/Service/';
+import Company from './pages/Company/';
+import Contact from './pages/Contact/';
+import PostDetail from './Components/SubComponents/PostDetail/';
 
-class App extends React.Component {
-  render() {
+export default function App(){
     return (
       <BrowserRouter>
         <div className='App'>
@@ -32,7 +31,4 @@ class App extends React.Component {
         </div>
       </BrowserRouter>
     );
-  }
-}
-
-export default App;
+  };
